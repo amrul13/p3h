@@ -65,7 +65,7 @@ export default function Home() {
             
 
     <form className="" action="#">
-      <div className="w-full space-y-6 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+      <div className="w-full space-y-6 p-4  my-6 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
         <h5 className="text-xl font-medium text-gray-900">Data Calon PPPH</h5>
         <span className="text-sm">Seluruh data akan dikirim ke sistem BPJPH</span>
         <div className="grid gap-6 mb-6 lg:grid-cols-2">
@@ -77,12 +77,12 @@ export default function Home() {
           <div>
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">NIK</label>
               <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="012345678910" required />
-                  </div>
+          </div>
             
           <div>
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Email</label>
               <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@gmail.com" required />
-                  </div>
+          </div>
           <div>
               <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">No Telepon / Whatsapp</label>
               <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="082123456789" required />
@@ -97,12 +97,72 @@ export default function Home() {
           </div>
         
         </div>
+              </div>
+             {/* endcard  */}
+         <div className="w-full space-y-6 p-4  mb-6 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+        <h5 className="text-xl font-medium text-gray-900">Alamat Area Kerja</h5>
+        <span className="text-sm">Anda dapat mengisi dengan area kerja Anda sebagai PPPH di provinsi yang berbeda dengan alamat KTP Anda</span>
+        <div className="grid gap-6 mb-6 lg:grid-cols-2">
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Provinsi</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Gorontalo" required />
+          </div>
+                  
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Kota / Kabupaten</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Bone Bolango" required />
+          </div>
+            
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Kecamatan</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Telaga" required />
+          </div>
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Desa / Kelurahan</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Mongolato" required />
+                  </div>
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Kode Pos</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="912312" required />
+          </div>
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Alamat Lengkap</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="jl. jalan nomor 123" required />
+          </div>
+        
+        </div>
+              </div>
+         <div className="w-full space-y-6 p-4  mb-6 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 ">
+        <h5 className="text-xl font-medium text-gray-900">Isian Tambahan</h5>
+        
+        <div className="">
+          <div>
+              <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 ">Alasan Menjadi PPPH</label>
+              <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="Alasan saya ...." required />
+          </div>
+         
+        </div>
       </div>
               
-        <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+        <button type="submit" className="w-full text-white bg-indigo-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Kirim</button>
     </form>
 
           </div>
+        </section>
+
+        <section>
+          <div className="bg-green-200 rounded-lg p-6 mb-6">
+            <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">APA ITU SWAKARTA® “HUB HULU - HILIR HALAL” ?</h1>
+                        <h1 className=" font-regular text-slate-700 md:text-5 text-center">SWAKARTA® “Hub Hulu – Hilir Halal” adalah Unit Kelembagaan bagi PPPH dalam menjalankan tugasnya. Melalui SWAKARTA® pelaku usaha lebih mudah melakukan koordinasi dan konfirmasi atas proses sertifikasi produk halal dan memperkuat PPPH dalam melakukan koordinasi kerja bersama stakeholder halal di daerah.</h1>
+
+          </div>
+
+          <div className="lg:px-32 md:px-0 mb-6">
+            <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[500px]">
+                <iframe className="w-full h-full" src="https://www.youtube-nocookie.com/embed/czfWrVeclsQ" title="Peluang Profesi P3H"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+            </div>
+          </div>
+
         </section>
 
       </main>
