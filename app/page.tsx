@@ -11,8 +11,8 @@ import Hero from "./components/Hero";
   export default function Home() {
     return (
       <>
-        {/* <Hero/> */}
-        <main className="bg-white px-10 pt-10">
+        <Hero/>
+        <main className="bg-white px-4 md:px-10 lg:px-10 pt-10">
           <section>
             <div className="bg-green-200 rounded-lg p-6 mb-6">
               <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">Jadi Pendamping Proses Produk Halal Profesional & Miliki Penghasilan Jutaan Rupiah setiap bulan bersama LPPPH EWI</h1>
@@ -34,7 +34,7 @@ import Hero from "./components/Hero";
             </div>
 
             <div className="lg:px-32 md:px-0 mb-6">
-              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[500px]">
+              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
                 <iframe className="w-full h-full" src="https://www.youtube-nocookie.com/embed/2V1yJefnLk0?si=HQcmXdUNUP-N6FDc" title="Peluang Profesi P3H" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
               </div>
             </div>
@@ -146,7 +146,7 @@ import Hero from "./components/Hero";
             </div>
 
             <div className="lg:px-32 md:px-0 mb-6">
-              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[500px]">
+              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
                 <iframe className="w-full h-full" src="https://www.youtube-nocookie.com/embed/czfWrVeclsQ" title="Peluang Profesi P3H" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
               </div>
             </div>

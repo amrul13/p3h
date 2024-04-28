@@ -8,10 +8,8 @@ const Footer2 = () => {
   className="flex flex-col items-center bg-zinc-50 text-center text-surface dark:bg-neutral-700 dark:text-white lg:text-left">
   <div className="container p-6">
     <div className="grid gap-4 lg:grid-cols-3">
-                  <div className="mb-6 md:mb-0">
-                     
-                          
-            <Image className='lg:mx-0 md:mx-auto sm:mx-auto xs:mx-auto' src="https://ppph.id/assets/img/new-lppph.png" alt="FlowBite Logo" width={250} height={20}/>
+                  <div className="mb-6 md:mb-0">             
+            <Image className='mx-auto w-[150px] lg:mx-0  lg:w-[225px] ' src="https://ppph.id/assets/img/new-lppph.png" alt="FlowBite Logo" width={250} height={20}/>
                       
       </div>
         
