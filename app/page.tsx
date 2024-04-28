@@ -10,33 +10,32 @@ import InfoCard from "./components/infoCard";
 export default function Home() {
   return (
     <>
-      <Hero animation="fade-right"/>
+      <Hero animation="fade-right" />
       <main
         style={{
           backgroundImage: `url(${"2.jpg"})`,
         }}
-        className="bg-contain bg-opacity-25 px-4 md:px-10 lg:px-10 pt-10 pb-16">
+        className="bg-contain bg-opacity-25 px-4 md:px-10 lg:px-10 pt-10 pb-16"
+      >
         <InfoCard animation="fade-up">
-           <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
-              Jadi Pendamping Proses Produk Halal Profesional & Miliki
-              Penghasilan Jutaan Rupiah setiap bulan bersama LPPPH EWI
-            </h1>
-            <h1 className=" font-regular text-slate-700 md:text-5 text-center">
-              Indonesia memiliki lebih dari 60 juta pelaku usaha mikro yang 60%
-              merupakan pelaku usaha sektor makanan & minuman. 17 Oktober 2024
-              seluruh pelaku usaha yang produknya terkait dengan makanan &
-              minuman wajib memiliki sertifikasi halal dari Badan Penyelenggara
-              Jaminan Produk Halal (BPJPH) Kementerian Agama RI.
-            </h1>
-            <h1 className=" font-regular text-slate-700 md:text-5 text-center">
-              Dibutuhkan Pendamping bagi Pelaku Usaha untuk mendaftarkan
-              produknya agar mendapatkan Sertifikat Halal dari BPJPH &
-              dibutuhkan lebih dari 200.000 Pendamping Proses Produk Halal
-              (PPPH) yang Profesional.
-            </h1>
+          <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
+            Jadi Pendamping Proses Produk Halal Profesional & Miliki Penghasilan
+            Jutaan Rupiah setiap bulan bersama LPPPH EWI
+          </h1>
+          <h1 className=" font-regular text-slate-700 md:text-5 text-center">
+            Indonesia memiliki lebih dari 60 juta pelaku usaha mikro yang 60%
+            merupakan pelaku usaha sektor makanan & minuman. 17 Oktober 2024
+            seluruh pelaku usaha yang produknya terkait dengan makanan & minuman
+            wajib memiliki sertifikasi halal dari Badan Penyelenggara Jaminan
+            Produk Halal (BPJPH) Kementerian Agama RI.
+          </h1>
+          <h1 className=" font-regular text-slate-700 md:text-5 text-center">
+            Dibutuhkan Pendamping bagi Pelaku Usaha untuk mendaftarkan produknya
+            agar mendapatkan Sertifikat Halal dari BPJPH & dibutuhkan lebih dari
+            200.000 Pendamping Proses Produk Halal (PPPH) yang Profesional.
+          </h1>
         </InfoCard>
         <InfoCard animation="fade-up">
-        
           <div className="bg-green-200 rounded-lg p-6 mb-6">
             <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
               Berapa Besar Penghasilan Seorang PPPH ?
@@ -56,32 +55,26 @@ export default function Home() {
               sebulan.{" "}
             </h1>
           </div>
-        
-
         </InfoCard>
         <InfoCard animation="fade-up">
-          
-            <div className="bg-green-200 rounded-lg p-6 mb-6">
-              <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
-                Apa itu Profesi Pendamping Proses Produk Halal Profesional ?
-              </h1>
+          <div className="bg-green-200 rounded-lg p-6 mb-6">
+            <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
+              Apa itu Profesi Pendamping Proses Produk Halal Profesional ?
+            </h1>
+          </div>
+
+          <div className="lg:px-32 md:px-0 mb-6">
+            <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/2V1yJefnLk0?si=HQcmXdUNUP-N6FDc"
+                title="Peluang Profesi P3H"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
             </div>
-
-            <div className="lg:px-32 md:px-0 mb-6">
-              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube-nocookie.com/embed/2V1yJefnLk0?si=HQcmXdUNUP-N6FDc"
-                  title="Peluang Profesi P3H"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                ></iframe>
-              </div>
-            </div>
-
-
+          </div>
         </InfoCard>
         <InfoCard animation="fade-up">
-           
           <div className="bg-green-200 rounded-lg p-6 mb-6">
             <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
               Daftar Segera dan Dapatkan Fasilitas Penempatan Kerja di SWAKARTA
@@ -350,38 +343,35 @@ export default function Home() {
               </button>
             </form>
           </div>
-        
         </InfoCard>
 
         <InfoCard animation="fade-up">
-             <section>
-          <div className="bg-green-200 rounded-lg p-6 mb-6">
-            <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
-              APA ITU SWAKARTA® “HUB HULU - HILIR HALAL” ?
-            </h1>
-            <h1 className=" font-regular text-slate-700 md:text-5 text-center">
-              SWAKARTA® “Hub Hulu – Hilir Halal” adalah Unit Kelembagaan bagi
-              PPPH dalam menjalankan tugasnya. Melalui SWAKARTA® pelaku usaha
-              lebih mudah melakukan koordinasi dan konfirmasi atas proses
-              sertifikasi produk halal dan memperkuat PPPH dalam melakukan
-              koordinasi kerja bersama stakeholder halal di daerah.
-            </h1>
-          </div>
-
-          <div className="lg:px-32 md:px-0 mb-6">
-            <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/czfWrVeclsQ"
-                title="Peluang Profesi P3H"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
+          <section>
+            <div className="bg-green-200 rounded-lg p-6 mb-6">
+              <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
+                APA ITU SWAKARTA® “HUB HULU - HILIR HALAL” ?
+              </h1>
+              <h1 className=" font-regular text-slate-700 md:text-5 text-center">
+                SWAKARTA® “Hub Hulu – Hilir Halal” adalah Unit Kelembagaan bagi
+                PPPH dalam menjalankan tugasnya. Melalui SWAKARTA® pelaku usaha
+                lebih mudah melakukan koordinasi dan konfirmasi atas proses
+                sertifikasi produk halal dan memperkuat PPPH dalam melakukan
+                koordinasi kerja bersama stakeholder halal di daerah.
+              </h1>
             </div>
-          </div>
-        </section>
-        </InfoCard>
 
-       
+            <div className="lg:px-32 md:px-0 mb-6">
+              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube-nocookie.com/embed/czfWrVeclsQ"
+                  title="Peluang Profesi P3H"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </div>
+          </section>
+        </InfoCard>
 
         {/* make a client section */}
         <section className="mt-20">
