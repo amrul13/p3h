@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 
 import Image from "next/image";
 
@@ -17,16 +18,23 @@ const clients = [
 const Sliding = () => {
   return (
     <Swiper
+      slidesPerView={3}
+      spaceBetween={30}
+      loop={true}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination, Autoplay]}
+      className="mySwiper"
      
     >
       {clients.map((client, index) => (
         <SwiperSlide key={index}>
-          <Image src={client.logo} alt={client.name} className="border p-1" width={100} height={100} />
-          <h1 className="mt-3">{client.name}</h1>
-          <p className="mt-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-            officiis provident vitae, doloribus eaque saepe
-          </p>
+          <Image src={client.logo} alt={client.name} className="p-1 w-40" width={100} height={100} />   
         </SwiperSlide>
       ))}
     </Swiper>
