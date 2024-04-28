@@ -1,7 +1,19 @@
+"use client"
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-const Hero = () => {
+interface HeroProps {
+  animation: string;
+}
+
+const Hero: React.FC<HeroProps> = (props) => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+    }, []);
+
   return (
     <>
       <section
@@ -11,7 +23,7 @@ const Hero = () => {
         className="flex flex-col justify-between bg-cover h-screen ml-[-290px] md:ml-auto"
       >
         {/* make logo */}
-        <div className="flex items-center justify-end">
+              <div className="flex items-center justify-end" data-aos={props.animation}>
           <Image
             className=" w-32 lg:w-60"
             src={"https://ppph.id/assets/img/new-lppph.png"}
@@ -29,7 +41,7 @@ const Hero = () => {
         </div>
 
         {/* make hero text section */}
-        <div className="grid grid-cols-2 mt-[-120px]">
+        <div className="grid grid-cols-2 mt-[-120px]" data-aos={props.animation}>
           <div></div>
           <div className="text-center flex flex-col items-center justify-end">
             <p className="text-xl md:text-3xl font-medium text-slate-700">

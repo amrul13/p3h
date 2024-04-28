@@ -5,19 +5,19 @@ import "swiper/css";
 import Slider from "./components/Slider";
 import Footer2 from "./components/Footer2";
 import Hero from "./components/Hero";
+import InfoCard from "./components/infoCard";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero animation="fade-right"/>
       <main
         style={{
           backgroundImage: `url(${"2.jpg"})`,
         }}
         className="bg-contain bg-opacity-25 px-4 md:px-10 lg:px-10 pt-10 pb-16">
-        <section>
-          <div className="bg-green-200 rounded-lg p-6 mb-6">
-            <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
+        <InfoCard animation="fade-up">
+           <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
               Jadi Pendamping Proses Produk Halal Profesional & Miliki
               Penghasilan Jutaan Rupiah setiap bulan bersama LPPPH EWI
             </h1>
@@ -34,9 +34,9 @@ export default function Home() {
               dibutuhkan lebih dari 200.000 Pendamping Proses Produk Halal
               (PPPH) yang Profesional.
             </h1>
-          </div>
-        </section>
-        <section>
+        </InfoCard>
+        <InfoCard animation="fade-up">
+        
           <div className="bg-green-200 rounded-lg p-6 mb-6">
             <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
               Berapa Besar Penghasilan Seorang PPPH ?
@@ -56,27 +56,32 @@ export default function Home() {
               sebulan.{" "}
             </h1>
           </div>
-        </section>
-        <section>
-          <div className="bg-green-200 rounded-lg p-6 mb-6">
-            <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
-              Apa itu Profesi Pendamping Proses Produk Halal Profesional ?
-            </h1>
-          </div>
+        
 
-          <div className="lg:px-32 md:px-0 mb-6">
-            <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube-nocookie.com/embed/2V1yJefnLk0?si=HQcmXdUNUP-N6FDc"
-                title="Peluang Profesi P3H"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              ></iframe>
+        </InfoCard>
+        <InfoCard animation="fade-up">
+          
+            <div className="bg-green-200 rounded-lg p-6 mb-6">
+              <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
+                Apa itu Profesi Pendamping Proses Produk Halal Profesional ?
+              </h1>
             </div>
-          </div>
-        </section>
 
-        <section>
+            <div className="lg:px-32 md:px-0 mb-6">
+              <div className="p-6 bg-white border border-gray-200 rounded-lg shadow h-[380px] md:h-[640px]">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube-nocookie.com/embed/2V1yJefnLk0?si=HQcmXdUNUP-N6FDc"
+                  title="Peluang Profesi P3H"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </div>
+
+
+        </InfoCard>
+        <InfoCard animation="fade-up">
+           
           <div className="bg-green-200 rounded-lg p-6 mb-6">
             <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
               Daftar Segera dan Dapatkan Fasilitas Penempatan Kerja di SWAKARTA
@@ -345,9 +350,11 @@ export default function Home() {
               </button>
             </form>
           </div>
-        </section>
+        
+        </InfoCard>
 
-        <section>
+        <InfoCard animation="fade-up">
+             <section>
           <div className="bg-green-200 rounded-lg p-6 mb-6">
             <h1 className=" text-2xl font-bold text-slate-700 text-center mb-2">
               APA ITU SWAKARTA® “HUB HULU - HILIR HALAL” ?
@@ -372,6 +379,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </InfoCard>
+
+       
 
         {/* make a client section */}
         <section className="mt-20">
